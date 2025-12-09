@@ -10,7 +10,7 @@
     <!-- box icon link-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!-- box icon link-->
+    <!-- remix icon link-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- google font link-->
@@ -18,13 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <!-- header-->
     <header>
-        <a href="#"><img src="img/logo.png" class="logo"></a>
+        <a href="#"><img src="img/logo.png" class="logo" alt="La Jama Restaurant"></a>
 
         <ul class="navlist">
             <li><a href="#">Inicio</a></li>
@@ -39,10 +38,10 @@
         <div class="nav-right">
             <a href="#"><i class="ri-user-line"></i></a>
             <a href="#"><i class="ri-heart-2-line"></i></a>
-            <a href="#"><i class="ri-shopping-cart-fill"></i></a>
+            <!-- Icono del carrito -->
+            <a href="#" id="cart-icon"><i class="ri-shopping-cart-fill"></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-
     </header>
 
     <!-- Home-->
@@ -51,48 +50,48 @@
             <h5>Tradición Exquisita</h5>
             <h1>Sabor peruano auténtico</h1>
             <p>Placeres gastronómicos para todos los sentidos!</p>
-            <a href="https://api.whatsapp.com/send/?phone=%2B51955857588&text&type=phone_number&app_absent=0" class="btn">
+            <a href="https://api.whatsapp.com/send/?phone=%2B51955857588&text&type=phone_number&app_absent=0"
+                class="btn">
                 <i class="ri-store-fill"></i>
                 Compra ahora!
             </a>
         </div>
 
         <div class="home-img">
-            <img src="img/home.png" alt="home-img">
+            <img src="img/home.png" alt="Plato principal">
         </div>
     </section>
 
     <!-- Locales-->
-
     <section class="crafts">
         <div class="crafts-content">
             <div class="crafts-box">
-                <img src="img/c1.jpg">
+                <img src="img/c1.jpg" alt="Sede Lima">
                 <h6>Sede:</h6>
                 <h3>Lima</h3>
                 <a href="#" class="crafts-btn">
                     <i class="ri-store-fill"></i>
-                    Ubicanos!
+                    Ubícanos!
                 </a>
             </div>
 
             <div class="crafts-box">
-                <img src="img/c2.jpg">
+                <img src="img/c2.jpg" alt="Sede Cuzco">
                 <h6>Sede:</h6>
                 <h3>Cuzco</h3>
                 <a href="#" class="crafts-btn">
                     <i class="ri-store-fill"></i>
-                    Ubicanos!
+                    Ubícanos!
                 </a>
             </div>
 
             <div class="crafts-box">
-                <img src="img/c3.jpg">
+                <img src="img/c3.jpg" alt="Sede Arequipa">
                 <h6>Sede:</h6>
                 <h3>Arequipa</h3>
                 <a href="#" class="crafts-btn">
                     <i class="ri-store-fill"></i>
-                    Ubicanos!
+                    Ubícanos!
                 </a>
             </div>
         </div>
@@ -101,7 +100,7 @@
     <!-- Platos-->
     <section class="new-products">
         <div class="center-in">
-            <img src="img/center.png">
+            <img src="img/center.png" alt="">
             <h2>Nuestros platos bandera</h2>
             <p>Una verdadera obra maestra culinaria que refleja la diversidad geográfica y
                 cultural del país. Desde el emblemático ceviche hasta el reconfortante ají de gallina, cada plato es una
@@ -110,84 +109,84 @@
         </div>
 
         <div class="new-products-content">
-            <div class="row">
+            <div class="row" data-name="Ceviche" data-price="50">
                 <div class="row-img">
-                    <img src="img/P1.png">
+                    <img src="img/P1.png" alt="Ceviche">
                 </div>
                 <h3>Ceviche</h3>
                 <h5>S/50.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-name="Lomo Saltado" data-price="60">
                 <div class="row-img">
-                    <img src="img/p2.png">
+                    <img src="img/p2.png" alt="Lomo Saltado">
                 </div>
                 <h3>Lomo Saltado</h3>
                 <h5>S/60.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-name="Pollo a la Brasa" data-price="60">
                 <div class="row-img">
-                    <img src="img/p3.png">
+                    <img src="img/p3.png" alt="Pollo a la Brasa">
                 </div>
                 <h3>Pollo a la Brasa</h3>
                 <h5>S/60.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-name="Anticuchos" data-price="40">
                 <div class="row-img">
-                    <img src="img/p4.png">
+                    <img src="img/p4.png" alt="Anticuchos">
                 </div>
                 <h3>Anticuchos</h3>
                 <h5>S/40.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-name="Papa a la Huancaina" data-price="30">
                 <div class="row-img">
-                    <img src="img/p5.png">
+                    <img src="img/p5.png" alt="Papa a la Huancaina">
                 </div>
                 <h3>Papa a la Huancaina</h3>
                 <h5>S/30.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-name="Causa Rellena" data-price="50">
                 <div class="row-img">
-                    <img src="img/p6.png">
+                    <img src="img/p6.png" alt="Causa Rellena">
                 </div>
                 <h3>Causa Rellena</h3>
                 <h5>S/50.00</h5>
                 <div class="r-btnn">
-                    <a href="#">
+                    <a href="#" class="add-to-cart">
                         Add to cart
                         <i class="ri-shopping-cart-fill"></i>
                     </a>
@@ -197,7 +196,6 @@
     </section>
 
     <!-- CTA-->
-
     <section class="cta">
         <div class="cta-content">
             <h4>Regístrate y obtén un 10% de descuento</h4>
@@ -208,17 +206,16 @@
             <div class="c-search">
                 <form action="">
                     <input type="email" placeholder="Ingresa tu email...." required>
-                    <input type="submit" value="Subscribete" class="btn">
+                    <input type="submit" value="Subscríbete" class="btn">
                 </form>
             </div>
         </div>
     </section>
 
     <!-- POSTRES-->
-
     <section class="trending">
         <div class="center-in">
-            <img src="img/center.png">
+            <img src="img/center.png" alt="">
             <h2>Nuestros Postres</h2>
             <p>Los postres peruanos, con su diversidad de sabores y texturas, encarnan la rica herencia culinaria del
                 país, desde el emblemático suspiro limeño hasta los tentadores picarones, ofreciendo una experiencia
@@ -227,36 +224,35 @@
 
         <div class="trending-content">
             <div class="box">
-                <img src="img/t1.png">
+                <img src="img/t1.png" alt="Suspiro a la Limeña">
                 <h5>Suspiro a la Limeña</h5>
                 <h6>S/20.00</h6>
             </div>
 
             <div class="box">
-                <img src="img/t2.png">
+                <img src="img/t2.png" alt="Picarones">
                 <h5>Picarones Peruanos</h5>
                 <h6>S/22.00</h6>
             </div>
 
             <div class="box">
-                <img src="img/t3.png">
+                <img src="img/t3.png" alt="Mazamorra Morada">
                 <h5>Mazamorra Morada</h5>
                 <h6>S/20.00</h6>
             </div>
 
             <div class="box">
-                <img src="img/t4.png">
-                <h5>Turron Limeño</h5>
+                <img src="img/t4.png" alt="Turrón Limeño">
+                <h5>Turrón Limeño</h5>
                 <h6>S/25.00</h6>
             </div>
         </div>
     </section>
 
     <!-- BEBIDAS-->
-
     <section class="blog">
         <div class="center-in">
-            <img src="img/center.png">
+            <img src="img/center.png" alt="">
             <h2>Nuestras Bebidas</h2>
             <p>Las bebidas peruanas son una expresión vibrante de la cultura y la tradición del país, desde el
                 refrescante pisco sour hasta el reconfortante emoliente, cada bebida ofrece una experiencia única que
@@ -266,7 +262,7 @@
         <div class="blog-content">
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="img/b1.jpg">
+                    <img src="img/b1.jpg" alt="Pisco Sour">
                 </div>
                 <h6>Pisco Sour</h6>
                 <h3>Es una bebida muy popular y representativa.</h3>
@@ -274,7 +270,7 @@
 
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="img/b2.png">
+                    <img src="img/b2.png" alt="Chicha Morada">
                 </div>
                 <h6>Chicha Morada</h6>
                 <h3>Es refrescante y se consume en todo el país.</h3>
@@ -282,7 +278,7 @@
 
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="img/b3.png">
+                    <img src="img/b3.png" alt="Inca Kola">
                 </div>
                 <h6>Inca Kola</h6>
                 <h3>Brillante y un sabor dulce único.</h3>
@@ -290,13 +286,37 @@
         </div>
     </section>
 
-    <!-- footer-->
+    <!-- CARRITO (overlay) -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Mi pedido</h2>
+                <button id="cart-close" class="cart-close-btn">&times;</button>
+            </div>
 
+            <div id="cart-items" class="cart-items">
+                <!-- Aquí se pintan los productos del carrito -->
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    Total: S/ <span id="cart-total">0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="cart-clear" class="btn-cart-secondary">Vaciar carrito</button>
+                    <button id="cart-whatsapp" class="btn-cart-primary">
+                        Solicitar por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-->
     <section class="footer">
         <div class="footer-box">
-            <a href="#"><img src="img/logo.png" class="logox"></a>
-            <p>Donde cada bocado cuenta una historia
-            </p>
+            <a href="#"><img src="img/logo.png" class="logox" alt="La Jama Restaurant"></a>
+            <p>Donde cada bocado cuenta una historia</p>
             <div class="icons">
                 <a href="#"><i class="ri-facebook-fill"></i></a>
                 <a href="#"><i class="ri-instagram-fill"></i></a>
@@ -306,11 +326,11 @@
         </div>
 
         <div class="footer-box">
-            <h3>Accesos Rapidos</h3>
-            <a href="#">Guia de Productos</a>
-            <a href="#">Terminos y condiciones</a>
-            <a href="#">Politica de envio</a>
-            <a href="#">Politica de Privacidad</a>
+            <h3>Accesos Rápidos</h3>
+            <a href="#">Guía de Productos</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Política de envío</a>
+            <a href="#">Política de Privacidad</a>
             <a href="#">Recomendaciones</a>
         </div>
 
@@ -319,29 +339,27 @@
             <a href="#">Acerca de Nosotros</a>
             <a href="#">Nuestros Locales</a>
             <a href="#">Nuestra Tienda</a>
-            <a href="#">Contactanos</a>
+            <a href="#">Contáctanos</a>
             <a href="#">Noticias</a>
         </div>
 
         <div class="footer-box">
-            <h3>Encuentranos</h3>
+            <h3>Encuéntranos</h3>
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Phone:</a>
             <a href="#">+51955857588</a>
         </div>
-
     </section>
-
+    
     <!-- Copyright-->
-
     <div class="copyright">
         <div class="end-text">
             <p>Copyright @2024 LA JAMA. All rights Reserved By Erick Torres</p>
         </div>
         <div class="end-img">
-            <img src="img/payment.png">
+            <img src="img/payment.png" alt="Medios de pago">
         </div>
     </div>
 
@@ -349,10 +367,6 @@
 
     <!-- custom js file link-->
     <script src="js/script.js"></script>
-
-
-
-
 </body>
 
 </html>
